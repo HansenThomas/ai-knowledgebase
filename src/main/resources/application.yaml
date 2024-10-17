@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: ai-knowledgebase
+  ai:
+    ollama:
+      embedding:
+        enabled: true
+        model: nomic-embed-text
+      chat:
+        enabled: false
+      base-url: http://localhost:11434
+  neo4j:
+    authentication:
+      username: neo4j
+      password: neo4j
+    uri: bolt://localhost:7687
